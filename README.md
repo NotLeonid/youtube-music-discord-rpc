@@ -1,7 +1,6 @@
 # Version 1.0
 # Server installation
-1) Make sure you have Node.JS installed. Download it from [nodejs.org](https://nodejs.org/)
-2) After installing Node.JS, download this repository.
+2) Download this repository.
 3) Open command prompt in the folder
 4) Run `npm install`
 5) You can close the command prompt.
