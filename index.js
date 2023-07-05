@@ -12,6 +12,9 @@ var cooldown=0;
 rpc.on("ready",()=>{stop();});
 rpc.login({clientId}).catch(console.error);
 
+setTimeout(process.exit,1000*60*10);
+
+
 function timeToMs(str){const items=str.split(":").map(Number);let h=0;let m=0;let s=0;if(items.length==3){[h,m,s]=items;}else if(items.length==2){[m,s]=items;}return ((h*60+m)*60+s)*1000;}
 function change(title,artist,time,thumbnail){
 if(!rpc.user)return;
