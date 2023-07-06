@@ -9,12 +9,9 @@ var rpc;
 var unknown="(unspecified)";
 var cooldown=0;
 
-function startRPC(){
 rpc=new DiscordRPC.Client({transport:'ipc'});
 rpc.on("ready",()=>{});
 rpc.login({clientId}).catch(console.error);
-}
-startRPC();
 
 setTimeout(process.exit,1000*60*10);
 
@@ -28,7 +25,7 @@ thumbnail=thumbnail||"icon";
 var startTimestamp=new Date(new Date().getTime()-timeToMs(time||"0:00:00"));
 rpc.setActivity({details:title,state:artist,startTimestamp,largeImageKey:thumbnail,largeImageText:title,instance:false,smallImageKey:thumbnail=="icon"?undefined:"icon",smallImageText:"YouTube Music",buttons:[{label:"I want this too!",url:"https://github.com/NotLeonid/youtube-music-discord-rpc"}]});
 }
-function stop(){process.exit();rpc.destroy();if(!rpc.user)return;rpc.setActivity();}
+function stop(){rpc.destroy();process.exit();}//if(!rpc.user)return;rpc.setActivity();}
 
 const wss=new WebSocket.Server({port:33444});
 wss.on('connection',async function connection(ws,req){
