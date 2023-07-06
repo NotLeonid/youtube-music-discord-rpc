@@ -1,4 +1,7 @@
-# Version 1.0
+# Version 1.1
+- Will now fix itself if not connected to Discord.
+- Will now only display if you're on YT Music, not forever.
+
 # Server installation
 2) Download this repository.
 3) Open command prompt in the folder
