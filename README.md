@@ -10,11 +10,13 @@
 5) To start the server, click on `Start.vbs`
 
 # Extension installation
-1) Visit the [extension page](https://chrome.google.com/webstore/detail/hphfoamccfcbdelhgnmojakdjljajpgj/)
-2) Install it from there
+1) Download the `extension` folder from this repository
+2) Open the extension manager in your browser (example: `chrome://extensions`)
+3) Enable Developer Mode
+4) Drag'n'drop the downloaded `extension` folder there
 
 # Usage
-1) Head over [YouTube Music™](https://music.youtube.com/)
+1) Head over [YouTube Music](https://music.youtube.com/)
 2) Start a song and check your Discord profile :)
 3) The result should look like something like that:
 ![Example image](Example.png)
