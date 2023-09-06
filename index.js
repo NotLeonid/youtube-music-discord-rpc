@@ -27,7 +27,7 @@ rpc.setActivity({details:title,state:artist,startTimestamp,largeImageKey:thumbna
 }
 function stop(){rpc.destroy();process.exit();}//if(!rpc.user)return;rpc.setActivity();}
 
-const wss=new WebSocket.Server({port:33444});
+const wss=new WebSocket.Server({port:33444,host:'127.0.0.1'});
 wss.on('connection',async function connection(ws,req){
 ws.on('message',async function incoming(data){
 var data=JSON.parse(data);
